@@ -1,223 +1,165 @@
-
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Олег & Марина | Приглашение на свадьбу</title>
+  <meta charset="UTF-8">
+  <title>Свадьба Олега и Марины</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Playfair Display', serif;
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #ffffff;
-      color: #2e2e2e;
+      background-color: #fdfdfd;
+      color: #1c1c1c;
     }
-
     header {
-      background-color: #f5f5f5;
-      text-align: center;
       padding: 60px 20px;
-      border-bottom: 2px solid #e0e0e0;
+      text-align: center;
+      border-bottom: 2px solid gold;
     }
-
     header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #2e2e2e;
+      font-size: 3em;
+      color: #000;
+      margin: 0;
     }
-
     header p {
-      font-size: 20px;
-      color: #777;
+      font-size: 1.2em;
+      color: #555;
     }
-
     section {
       padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: auto;
     }
-
-    .invite {
-      background-color: #fdfdfd;
-      border-left: 5px solid #a5c9a1;
-      padding: 20px;
-      font-size: 18px;
-      line-height: 1.6;
-      color: #333;
+    h2 {
+      color: #000;
+      border-bottom: 1px solid gold;
+      padding-bottom: 10px;
     }
-
-    .date-location {
-      margin-top: 30px;
-      font-size: 20px;
-      color: #4e7d49;
-    }
-
-    .names {
-      color: #bfa06f;
-      font-weight: bold;
-      font-size: 24px;
-      margin-top: 40px;
-    }
-
-    .timer {
+    .countdown {
+      font-size: 2em;
+      color: gold;
       text-align: center;
-      margin-top: 40px;
-      font-size: 24px;
-      color: #2e2e2e;
     }
-
-    .form-section {
-      background: #f9f9f9;
-      padding: 30px;
-      margin-top: 40px;
-      border: 1px solid #ddd;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border: 2px solid #ddd;
       border-radius: 8px;
     }
-
-    .form-section input,
-    .form-section textarea {
-      width: 100%;
+    .rsvp-form {
+      margin-top: 20px;
+    }
+    .rsvp-form input, .rsvp-form button {
       padding: 10px;
       margin-top: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
+      font-size: 1em;
     }
-
-    .form-section button {
-      background-color: #4e7d49;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .footer {
+    footer {
       text-align: center;
-      padding: 30px;
-      background-color: #fafafa;
-      font-size: 14px;
-      color: #aaa;
+      padding: 20px;
+      color: #999;
     }
-
-    .music-control {
+    .leaves {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/green-gobbler.png');
+      opacity: 0.03;
+      z-index: -1;
     }
   </style>
 </head>
 <body>
-
-<!-- Фоновая музыка -->
-<audio id="bg-music" loop>
-  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
-</audio>
-<div class="music-control" onclick="toggleMusic()" title="Включить/выключить музыку">🎵</div>
+<div class="leaves"></div>
 
 <header>
   <h1>Олег & Марина</h1>
-  <p>04 октября 2025</p>
+  <p>С радостью приглашаем вас на нашу свадьбу!</p>
 </header>
 
 <section>
-  <div class="invite">
-    <p>
-      Дорогие наши друзья и родные!<br><br>
-      Мы рады и счастливы пригласить вас на наше волшебное событие — день, когда две души станут единым целым! В этот особенный момент мы хотим разделить с вами нашу любовь и радость.
-    </p>
+  <h2>Дата и место</h2>
+  <p>📅 4 октября 2025 года</p>
+  <p>📍 Улица Заводская 1В, станица Гривенская</p>
+</section>
 
-    <div class="date-location">
-      📅 Дата: <strong>04.10.2025</strong><br>
-      ⏰ Время: <strong>17:00</strong><br>
-      📍 Место: <strong>станица Гривенская, ул. Заводская 1В</strong>
-    </div>
+<section>
+  <h2>Программа дня</h2>
+  <ul>
+    <li>17:00 — Выкуп невесты</li>
+    <li>18:00 — Сбор гостей, приветствие, фотосессия</li>
+    <li>18:30 — Регистрация</li>
+    <li>19:00 — Веселые конкурсы и танцы</li>
+    <li>23:00 — Торт</li>
+    <li>01:00 — Окончание вечера</li>
+  </ul>
+</section>
 
-    <p style="margin-top: 30px;">
-      Пусть ваши сердца наполнятся теплом, а наши счастливые улыбки станут отражением того, как важны для нас вы. Мы будем рады видеть вас в этот день, чтобы вместе создать незабываемые воспоминания и отметить начало нашего совместного пути.
-    </p>
+<section>
+  <h2>До свадьбы осталось:</h2>
+  <div class="countdown" id="countdown"></div>
+</section>
 
-    <p class="names">
-      С любовью,<br>
-      Олег и Марина
-    </p>
-  </div>
-
-  <!-- Таймер -->
-  <div class="timer">
-    До свадьбы осталось: <br>
-    <span id="countdown"></span>
-  </div>
-
-  <!-- RSVP форма -->
-  <div class="form-section">
-    <h2>Подтверждение участия</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label for="name">Имя:</label>
-      <input type="text" name="name" required />
-
-      <label for="guests">Количество гостей:</label>
-      <input type="number" name="guests" min="1" required />
-
-      <label for="message">Пожелания / Комментарии:</label>
-      <textarea name="message" rows="4"></textarea>
-
-      <button type="submit">Отправить</button>
-    </form>
+<section>
+  <h2>Галерея</h2>
+  <div class="gallery">
+    <img src="photo_1.jpeg" alt="Фото 1">
+    <img src="photo_2.jpeg" alt="Фото 2">
+    <img src="photo_3.jpeg" alt="Фото 3">
+    <img src="photo_4.jpeg" alt="Фото 4">
   </div>
 </section>
 
-<div class="footer">
-  © 2025 Олег & Марина
-</div>
+<section>
+  <h2>Подтвердите участие</h2>
+  <form class="rsvp-form">
+    <input type="text" placeholder="Ваше имя" required><br>
+    <button type="submit">Я приду!</button>
+  </form>
+</section>
 
-<!-- СКРИПТЫ -->
+<footer>
+  © 2025 Олег & Марина
+</footer>
+
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+</audio>
+
 <script>
-  // Таймер
-  const countDownDate = new Date("Oct 4, 2025 17:00:00").getTime();
+  // Счётчик
+  const countDownDate = new Date("Oct 4, 2025 00:00:00").getTime();
   const countdown = document.getElementById("countdown");
-  setInterval(function() {
+
+  const x = setInterval(function() {
     const now = new Date().getTime();
     const distance = countDownDate - now;
-
-    if (distance < 0) {
-      countdown.innerHTML = "💍 Свадьба уже началась!";
-      return;
-    }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    countdown.innerHTML = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
-  }, 1000);
+    countdown.innerHTML = days + "д " + hours + "ч " + minutes + "м " + seconds + "с ";
 
-  // Музыка
-  const music = document.getElementById("bg-music");
-  let isPlaying = false;
-
-  function toggleMusic() {
-    if (isPlaying) {
-      music.pause();
-    } else {
-      music.play();
+    if (distance < 0) {
+      clearInterval(x);
+      countdown.innerHTML = "Сегодня свадьба!";
     }
-    isPlaying = !isPlaying;
-  }
+  }, 1000);
 </script>
 
 </body>
 </html>
+
+      
+
+      
